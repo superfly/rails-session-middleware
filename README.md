@@ -1,4 +1,4 @@
-<img src="https://fly.io/slack/badge.svg">
+<a href="https://fly.io/slack"><img src="https://fly.io/slack/badge.svg"></a>
 
 # Superfly Rails 4+ Session Middleware App
 
