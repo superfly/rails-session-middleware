@@ -1,0 +1,4 @@
+zerp:
+  name: Fly Guy
+  email: fly@example.com
+  password_digest: <%= User.digest('password') %>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+    <title><%= full_title(yield(:title)) %></title>
+   	 <%= render 'layouts/head' %>
+		 <%= render 'layouts/shim' %>
+  </head>
+	<body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %> </div>
+      <% end %>
+      <% if logged_in? %>
+        <p> Neat-o! You're logged in. Isn't that <a href="https://fly.io/"> Superfly!? </a></p>
+        <%= link_to image_tag("/assets/kissy-fly.png", alt: "Kissing balloons", :class => "balloon"), 'https://fly.io' %>
+      <% end %>
+      <%= render 'layouts/footer' %>
+    </div>
+  </body>
+</html>
