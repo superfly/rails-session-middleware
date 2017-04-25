@@ -1,10 +1,18 @@
-<div class="center jumbotron">
-  <h1>Fly Rails 4+ Session Middleware</h1>
-  <h2>
-    This a demo Rails application by <a href="https://fly.io"> Fly.io </a>
-  </h2>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-</div>
 
-<%= link_to image_tag("/assets/balloon.png", alt: "Sentient Balloon", :class => "balloon"), 'https://fly.io' %>
+
+<% if logged_in? %>
+  <%= link_to image_tag("/assets/kissy-fly.png", alt: "Kissing balloons", :class => "balloon"), 'https://fly.io' %>
+  <p align="center"><strong> Logged in! </strong> </p>
+
+<% else %>
+  <%= link_to image_tag("/assets/balloon.png", alt: "Sentient Balloon", :class => "balloon"), 'https://fly.io' %>
+  <div class="center jumbotron">
+    <h1>Fly Rails 4+ Session Middleware</h1>
+    <h2>
+      This a demo Rails application by <a href="https://fly.io"> Fly.io </a>
+    </h2>
+
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+<% end %>
