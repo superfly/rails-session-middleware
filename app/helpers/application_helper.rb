@@ -1,8 +1,8 @@
 module ApplicationHelper
-  
+
   # Returns a full title with defaults.
   def full_title(page_title = '')
-    base_title = "Blergabelbebebe"
+    base_title = "Superfly Demo"
     if page_title.empty?
       base_title
     else
@@ -10,4 +10,3 @@ module ApplicationHelper
     end
   end
 end
-
