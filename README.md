@@ -1,3 +1,5 @@
+<img src="https://fly.io/slack/badge.svg">
+
 # Superfly Rails 4+ Session Middleware App
 
 A simple Rails application with login and logout.
