@@ -2,7 +2,7 @@
 
 
 <% if logged_in? %>
-  <%= link_to image_tag("/assets/kissy-fly.png", alt: "Kissing balloons", :class => "balloon"), 'https://fly.io' %>
+  <%= link_to image_tag("kissy-fly.png", alt: "Kissing balloons", :class => "balloon"), 'https://fly.io' %>
   <p align="center"><strong> Logged in! </strong> </p>
 
 <% else %>
@@ -14,5 +14,5 @@
 
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
-  <%= link_to image_tag("/assets/balloon.png", alt: "Sentient Balloon", :class => "balloon"), 'https://fly.io' %>
+  <%= link_to image_tag("balloon.png", alt: "Sentient Balloon", :class => "balloon"), 'https://fly.io' %>
 <% end %>
