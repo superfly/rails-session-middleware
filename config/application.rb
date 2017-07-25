@@ -12,6 +12,6 @@ module SampleApp
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     # config.assets.prefix = "/app/assets/"
-    config.relative_url_root = "/app/"
+    config.relative_url_root = "/app"
   end
 end
